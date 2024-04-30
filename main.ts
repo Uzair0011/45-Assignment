@@ -1,127 +1,111 @@
+// // 45 Assignment
 
-// 45 Assignment
+// // 1. Install [Node.js](https://nodejs.org/en/), [TypeScript](https://www.typescriptlang.org/download)  and [VS Code](https://code.visualstudio.com/) on your computer.
 
-// 1. Install [Node.js](https://nodejs.org/en/), [TypeScript](https://www.typescriptlang.org/download)  and [VS Code](https://code.visualstudio.com/) on your computer.
+// // 2. Personal Message: Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, “Hello Eric,
+// // would you like to learn some Python today?”
 
+// let personName: string = "Eric"
+// console.log(`"Hello ${personName}, would you like to learn some Python today?"`);
 
-// 2. Personal Message: Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, “Hello Eric,
-// would you like to learn some Python today?”
+// // 3. Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
 
-let personName: string = "Eric"
-console.log(`"Hello ${personName}, would you like to learn some Python today?"`);
+// let personName1: string = "Uzair Ahmed"
+// // console lowercase
+// console.log("Lowercase:",personName1.toLowerCase());
+// // console uppercase
+// console.log("Uppercase:",personName1.toUpperCase());
+// // console titlecase
+// console.log("Tilecase:", personName1.replace(/\b\w/g,c=> c.toUpperCase()));
 
+// // 4. Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the
+// // following, including the quotation marks:
 
-// 3. Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
+// // Albert Einstein once said, “A person who never made a mistake never tried anything new.”
 
-let personName1: string = "Uzair Ahmed"
-// console lowercase
-console.log("Lowercase:",personName1.toLowerCase());
-// console uppercase
-console.log("Uppercase:",personName1.toUpperCase());
-// console titlecase
-console.log("Tilecase:", personName1.replace(/\b\w/g,c=> c.toUpperCase()));
+// let autor: string = "Albert Einstein";
+// let quote: string = "“A person who never made a mistake never tried anything new.”";
+// console.log(`${autor} once said, ${quote}`);
 
+// // 5. Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
 
-// 4. Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the
-// following, including the quotation marks:
+// let famous_person: string = "Albert Einstein";
+// let quote: string = "“A person who never made a mistake never tried anything new.”";
+// let message: string = (`${famous_person} once said ${quote}`)
+// console.log(message);
 
-// Albert Einstein once said, “A person who never made a mistake never tried anything new.”
+// // 6. Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each
+// // character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
 
-let autor: string = "Albert Einstein";
-let quote: string = "“A person who never made a mistake never tried anything new.”";
-console.log(`${autor} once said, ${quote}`);
+// let personName: string = `\n\t Uzair Ahmed \t\n`;
+// console.log(personName);
+// let stripped: string = personName.trim();
+// console.log(stripped);
 
+// // 7. Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in print statements to see the results.
 
+// // Addition Method
+// let addition:number = 4+4
+// console.log(addition)
+// // Subtraction Method
+// let subtraction:number = 10-2
+// console.log(subtraction);
+// // Multiplication Method
+// let multiplication:number = 4*2
+// console.log(multiplication);
+// // Division Method
+// let division:number= 16/2
+// console.log(division)
 
-// 5. Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
+// // 8. You should create four lines that look like this:
+// // console.log(5 + 3)
+// // Your output should simply be four lines with the number 8 appearing once on each line.
 
+// console.log(5 + 3)  //Addition
+// console.log(10 - 2) //Subtraction
+// console.log(4 * 2)  //Multiplication
+// console.log(16/2)   //Division
 
-let famous_person: string = "Albert Einstein";
-let quote: string = "“A person who never made a mistake never tried anything new.”";
-let message: string = (`${famous_person} once said ${quote}`)
-console.log(message);
+// // 9. Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
 
+// let num:number = 10
+// console.log("my favourite Number is ", num);
 
+// // 10. Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write
+// // because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence
+// // describing what the program does.
 
-// 6. Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each
-// character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
+// // author: Uzair Ahmed
+// // date: [Monday, April 23, 2024]
+// // Task 9: print my favourite Number.
+// let num:number = 10
+// console.log("my favourite Number is ", num);
 
-let personName: string = `\n\t Uzair Ahmed \t\n`;
-console.log(personName);
-let stripped: string = personName.trim();
-console.log(stripped);
+// // 11. Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
 
+// let friendName:string [] = ["Adil", "Asim", "Ovais"]
+// console.log(friendName[0]);
+// console.log(friendName[1]);
+// console.log(friendName[2]);
 
-// 7. Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in print statements to see the results. 
+// // 12. Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message
+// // should be the same, but each message should be personalized with the person’s name.
 
-// Addition Method
-let addition:number = 4+4
-console.log(addition)
-// Subtraction Method
-let subtraction:number = 10-2
-console.log(subtraction);
-// Multiplication Method
-let multiplication:number = 4*2
-console.log(multiplication);
-// Division Method
-let division:number= 16/2
-console.log(division)
-
-
-// 8. You should create four lines that look like this:
-// console.log(5 + 3)
-// Your output should simply be four lines with the number 8 appearing once on each line.
-
-console.log(5 + 3)  //Addition
-console.log(10 - 2) //Subtraction
-console.log(4 * 2)  //Multiplication
-console.log(16/2)   //Division
-
-// 9. Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
-
-let num:number = 10
-console.log("my favourite Number is ", num);
-
-// 10. Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write
-// because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence
-// describing what the program does.
-
-// author: Uzair Ahmed
-// date: [Monday, April 23, 2024]
-// Task 9: print my favourite Number.
-let num:number = 10
-console.log("my favourite Number is ", num);
-
-
-// 11. Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
-
-let friendName:string [] = ["Adil", "Asim", "Ovais"]
-console.log(friendName[0]);
-console.log(friendName[1]);
-console.log(friendName[2]);
-
-
-
-
-// 12. Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message
-// should be the same, but each message should be personalized with the person’s name.
-
-let friendName:string [] = ["Adil", "Asim", "Ovais"]
-console.log("my first brother name is:", friendName[0]);
-console.log("my second brother name is:", friendName[1]);
-console.log("my third brother name is:", friendName[2]);
-
-
-
-
-
-
+// let friendName:string [] = ["Adil", "Asim", "Ovais"]
+// console.log("my first brother name is:", friendName[0]);
+// console.log("my second brother name is:", friendName[1]);
+// console.log("my third brother name is:", friendName[2]);
 
 // 13. Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list
 // to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
 
+// Let transport: string [] = ["Honda", "Audi", "BMW"]
+// transport.map((items)=> console.log(`I would like to own a ${items}`));
+
 // 14. Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to
 // invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
+
+let guest: string[] = ["Asim", "Ahmed", "Ovais"];
 
 // 15. Changing Guest List: You just heard that one of your guests can’t make the
 // dinner, so you need to send out a new set of invitations. You’ll have to think of
@@ -194,7 +178,6 @@ console.log("my third brother name is:", friendName[2]);
 // 22. Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs
 // to produce an index error. Make sure you correct the error before closing the program.
 
-
 // 23. Conditional Tests: Write a series of conditional tests. Print a statement
 // describing each test and your prediction for the results of each test. Your code
 // should look something like this:
@@ -223,7 +206,6 @@ console.log("my third brother name is:", friendName[2]);
 
 // • Test whether an item is not in a array
 
-
 // 25. Alien Colors #1: Imagine an alien was just shot down in a game. Create a
 // variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
 
@@ -241,7 +223,6 @@ console.log("my third brother name is:", friendName[2]);
 // • If the alien’s color isn’t green, print a statement that the player just earned 10 points.
 
 // • Write one version of this program that runs the if block and another that runs the else block.
-
 
 // 27. Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
 
@@ -273,7 +254,6 @@ console.log("my third brother name is:", friendName[2]);
 
 // • Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if block should print a statement,
 // such as You really like bananas!
-
 
 // 30. Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user
 // after they log in to a website. Loop through the array, and print a greeting to each user:
@@ -308,7 +288,6 @@ console.log("my third brother name is:", friendName[2]);
 // • Use an if-else chain inside the loop to print the proper ordinal ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th
 // 7th 8th 9th", and each result should be on a separate line.
 
-
 // 34. Pizzas: Think of at least three kinds of your favorite pizza. Store these
 // pizza names in a array, and then use a for loop to print the name of each pizza.
 
@@ -330,7 +309,6 @@ console.log("my third brother name is:", friendName[2]);
 // • Add a line at the end of your program stating what these animals have in
 // common. You could print a sentence such as Any of these animals would
 // make a great pet!
-
 
 // 36. T-Shirt: Write a function called make_shirt() that accepts a size and the
 // text of a message that should be printed on the shirt. The function should print
@@ -356,7 +334,6 @@ console.log("my third brother name is:", friendName[2]);
 // Call your function with at least three city-country pairs, and print the value
 // that’s returned.
 
-
 // 40. Album: Write a function called make_album() that builds a Object
 // describing a music album. The function should take in an artist name and an
 // album title, and it should return a Object containing these two pieces of
@@ -367,7 +344,6 @@ console.log("my third brother name is:", friendName[2]);
 // number of tracks on an album. If the calling line includes a value for the number
 // of tracks, add that value to the album’s Object. Make at least one new
 // function call that includes the number of tracks on an album.
-
 
 // 41. Magicians: Make a array of magician’s names. Pass the array to a function
 // called show_magicians(), which prints the name of each magician in the array.
@@ -383,18 +359,16 @@ console.log("my third brother name is:", friendName[2]);
 // Call show_magicians() with each array to show that you have one array of the original
 // names and one array with the Great added to each magician’s name.
 
-
 // 44. Sandwiches: Write a function that accepts a array of items a person wants
 // on a sandwich. The function should have one parameter that collects as many
 // items as the function call provides, and it should print a summary of the sandwich
 // that is being ordered. Call the function three times, using a different number
 // of arguments each time.
 
-
 // 45. Cars: Write a function that stores information about a car in a Object.
 // The function should always receive a manufacturer and a model name. It
 // should then accept an arbitrary number of keyword arguments. Call the function
 // with the required information and two other name-value pairs, such as a
-// color or an optional feature. 
+// color or an optional feature.
 // Print the Object that’s returned to make sure all the information was
 // stored correctly.
