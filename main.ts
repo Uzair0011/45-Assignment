@@ -141,19 +141,29 @@
 // dinner, so you need to send out a new set of invitations. You’ll have to think of
 // someone else to invite.
 
-// • Start with your program from Exercise 14. Add a print statement at the
+//  Add a print statement at the
 // end of your program stating the name of the guest who can’t make it.
 
-// • Modify your list, replacing the name of the guest who can’t make it with
-// the name of the new person you are inviting.
-
-// • Print a second set of invitation messages, one for each person who is still
-// in your list.
-
-
-
+// let namesOfGuest: string[] = [
+//     "Asim", "Ahmed", "Ovais","Abdullah"
+// ];
+// console.log(namesOfGuest);
+// let canNotAttend : string = "Asim"
+// console.log(`${canNotAttend} "can not attent the dinner."`)
 
 
+// // • Modify your list, replacing the name of the guest who can’t make it with
+// // the name of the new person you are inviting.
+
+// let newGuest: string = "Abdul samad"
+// namesOfGuest [namesOfGuest.indexOf(canNotAttend)] = newGuest;
+// console.log(namesOfGuest)
+
+// // • Print a second set of invitation messages, one for each person who is still
+// // in your list.
+
+// namesOfGuest.map((items)=>
+// console.log(`Dear ${items} you are invited to Dinner`))
 
 
 // 16. More Guests: You just found a bigger dinner table, so now more space is
@@ -167,6 +177,10 @@
 // • Add one new guest to the middle of your array.
 // • Use append() to add one new guest to the end of your list.
 // • Print a new set of invitation messages, one for each person in your list.
+
+
+let 
+
 
 // 17. Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
 

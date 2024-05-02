@@ -1,34 +1,133 @@
 // // 45 Assignment
-var guestList = [
-    {
-        name: "Asim",
-        message: "Dear Asim, I am honored to invite you to dinner. Your insights have profoundly shaped our understanding of the universe, and it would be a privilege to converse with you.",
-    },
-    {
-        name: "Ahmed",
-        message: "Dear Ahmed, your words have inspired countless individuals across generations. It would be an immense pleasure to have you join us for dinner and share your wisdom.",
-    },
-    {
-        name: "Ovais",
-        message: "Dear Ovais, your brilliance as an artist, scientist, and inventor continues to amaze the world. We would be delighted if you could grace us with your presence at dinner.",
-    },
-];
-function sendInvitations(guestList) {
-    guestList.forEach(function (person) {
-        console.log("Sending invitation to ".concat(person.name, "..."));
-        console.log("Dear ".concat(person.name, ",\n").concat(person.message, "\n\nSincerely,\n[Uzair Ahmed]"));
-    });
-}
-sendInvitations(guestList);
+// // 1. Install [Node.js](https://nodejs.org/en/), [TypeScript](https://www.typescriptlang.org/download)  and [VS Code](https://code.visualstudio.com/) on your computer.
+// // 2. Personal Message: Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, “Hello Eric,
+// // would you like to learn some Python today?”
+// let personName: string = "Eric"
+// console.log(`"Hello ${personName}, would you like to learn some Python today?"`);
+// // 3. Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
+// let personName1: string = "Uzair Ahmed"
+// // console lowercase
+// console.log("Lowercase:",personName1.toLowerCase());
+// // console uppercase
+// console.log("Uppercase:",personName1.toUpperCase());
+// // console titlecase
+// console.log("Tilecase:", personName1.replace(/\b\w/g,c=> c.toUpperCase()));
+// // 4. Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the
+// // following, including the quotation marks:
+// // Asim once said, “A person who never made a mistake never tried anything new.”
+// let autor: string = "Asim";
+// let quote: string = "“A person who never made a mistake never tried anything new.”";
+// console.log(`${autor} once said, ${quote}`);
+// // 5. Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
+// let famous_person: string = "Asim";
+// let quote: string = "“A person who never made a mistake never tried anything new.”";
+// let message: string = (`${famous_person} once said ${quote}`)
+// console.log(message);
+// // 6. Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each
+// // character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
+// let personName: string = `\n\t Uzair Ahmed \t\n`;
+// console.log(personName);
+// let stripped: string = personName.trim();
+// console.log(stripped);
+// // 7. Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in print statements to see the results.
+// // Addition Method
+// let addition:number = 4+4
+// console.log(addition)
+// // Subtraction Method
+// let subtraction:number = 10-2
+// console.log(subtraction);
+// // Multiplication Method
+// let multiplication:number = 4*2
+// console.log(multiplication);
+// // Division Method
+// let division:number= 16/2
+// console.log(division)
+// // 8. You should create four lines that look like this:
+// // console.log(5 + 3)
+// // Your output should simply be four lines with the number 8 appearing once on each line.
+// console.log(5 + 3)  //Addition
+// console.log(10 - 2) //Subtraction
+// console.log(4 * 2)  //Multiplication
+// console.log(16/2)   //Division
+// // 9. Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
+// let num:number = 10
+// console.log("my favourite Number is ", num);
+// // 10. Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write
+// // because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence
+// // describing what the program does.
+// // author: Uzair Ahmed
+// // date: [Monday, April 23, 2024]
+// // Task 9: print my favourite Number.
+// let num:number = 10
+// console.log("my favourite Number is ", num);
+// // 11. Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
+// let friendName:string [] = ["Adil", "Asim", "Ovais"]
+// console.log(friendName[0]);
+// console.log(friendName[1]);
+// console.log(friendName[2]);
+// // 12. Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message
+// // should be the same, but each message should be personalized with the person’s name.
+// let friendName:string [] = ["Adil", "Asim", "Ovais"]
+// console.log("my first brother name is:", friendName[0]);
+// console.log("my second brother name is:", friendName[1]);
+// console.log("my third brother name is:", friendName[2]);
+// 13. Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list
+// to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
+// Let transport: string [] = ["Honda", "Audi", "BMW"]
+// transport.map((items)=> console.log(`I would like to own a ${items}`));
+// 14. Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to
+// invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
+// interface Person {
+//   name: string;
+//   message: string;
+// }
+// const guestList: Person[] = [
+//   {
+//     name: "Asim",
+//     message:
+//       "Dear Asim, I am honored to invite you to dinner. Your insights have profoundly shaped our understanding of the universe, and it would be a privilege to converse with you.",
+//   },
+//   {
+//     name: "Ahmed",
+//     message:
+//       "Dear Ahmed, your words have inspired countless individuals across generations. It would be an immense pleasure to have you join us for dinner and share your wisdom.",
+//   },
+//   {
+//     name: "Ovais",
+//     message:
+//       "Dear Ovais, your brilliance as an artist, scientist, and inventor continues to amaze the world. We would be delighted if you could grace us with your presence at dinner.",
+//   },
+// ];
+// function sendInvitations(guestList: Person[]) {
+//   guestList.forEach((person) => {
+//     console.log(`Sending invitation to ${person.name}...`);
+//     console.log(
+//       `Dear ${person.name},\n${person.message}\n\nSincerely,\n[Uzair Ahmed]`
+//     );
+//   });
+// }
+// sendInvitations(guestList);
 // 15. Changing Guest List: You just heard that one of your guests can’t make the
 // dinner, so you need to send out a new set of invitations. You’ll have to think of
 // someone else to invite.
-// • Start with your program from Exercise 14. Add a print statement at the
+//  Add a print statement at the
 // end of your program stating the name of the guest who can’t make it.
+var namesOfGuest = [
+    "Asim", "Ahmed", "Ovais", " Abdullah"
+];
+console.log(namesOfGuest);
+var canNotAttend = "Asim";
+console.log("".concat(canNotAttend, " \"can not attent the dinner.\""));
 // • Modify your list, replacing the name of the guest who can’t make it with
 // the name of the new person you are inviting.
+var newGuest = "Abdul samad";
+namesOfGuest[namesOfGuest.indexOf(canNotAttend)] = newGuest;
+console.log(namesOfGuest);
 // • Print a second set of invitation messages, one for each person who is still
 // in your list.
+namesOfGuest.map(function (items) {
+    return console.log("Dear ".concat(items, " you are invited to Dinner"));
+});
 // 16. More Guests: You just found a bigger dinner table, so now more space is
 // available. Think of three more guests to invite to dinner.
 // • Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a
