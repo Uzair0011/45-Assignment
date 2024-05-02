@@ -21,15 +21,15 @@
 // // 4. Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the
 // // following, including the quotation marks:
 
-// // Albert Einstein once said, “A person who never made a mistake never tried anything new.”
+// // Asim once said, “A person who never made a mistake never tried anything new.”
 
-// let autor: string = "Albert Einstein";
+// let autor: string = "Asim";
 // let quote: string = "“A person who never made a mistake never tried anything new.”";
 // console.log(`${autor} once said, ${quote}`);
 
 // // 5. Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
 
-// let famous_person: string = "Albert Einstein";
+// let famous_person: string = "Asim";
 // let quote: string = "“A person who never made a mistake never tried anything new.”";
 // let message: string = (`${famous_person} once said ${quote}`)
 // console.log(message);
@@ -105,7 +105,37 @@
 // 14. Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to
 // invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
 
-let guest: string[] = ["Asim", "Ahmed", "Ovais"];
+// interface Person {
+//   name: string;
+//   message: string;
+// }
+// const guestList: Person[] = [
+//   {
+//     name: "Asim",
+//     message:
+//       "Dear Asim, I am honored to invite you to dinner. Your insights have profoundly shaped our understanding of the universe, and it would be a privilege to converse with you.",
+//   },
+//   {
+//     name: "Ahmed",
+//     message:
+//       "Dear Ahmed, your words have inspired countless individuals across generations. It would be an immense pleasure to have you join us for dinner and share your wisdom.",
+//   },
+//   {
+//     name: "Ovais",
+//     message:
+//       "Dear Ovais, your brilliance as an artist, scientist, and inventor continues to amaze the world. We would be delighted if you could grace us with your presence at dinner.",
+//   },
+// ];
+
+// function sendInvitations(guestList: Person[]) {
+//   guestList.forEach((person) => {
+//     console.log(`Sending invitation to ${person.name}...`);
+//     console.log(
+//       `Dear ${person.name},\n${person.message}\n\nSincerely,\n[Uzair Ahmed]`
+//     );
+//   });
+// }
+// sendInvitations(guestList);
 
 // 15. Changing Guest List: You just heard that one of your guests can’t make the
 // dinner, so you need to send out a new set of invitations. You’ll have to think of
@@ -119,6 +149,12 @@ let guest: string[] = ["Asim", "Ahmed", "Ovais"];
 
 // • Print a second set of invitation messages, one for each person who is still
 // in your list.
+
+
+
+
+
+
 
 // 16. More Guests: You just found a bigger dinner table, so now more space is
 // available. Think of three more guests to invite to dinner.
