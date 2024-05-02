@@ -112,30 +112,50 @@
 // someone else to invite.
 //  Add a print statement at the
 // end of your program stating the name of the guest who can’t make it.
-var namesOfGuest = [
-    "Asim", "Ahmed", "Ovais", " Abdullah"
-];
-console.log(namesOfGuest);
-var canNotAttend = "Asim";
-console.log("".concat(canNotAttend, " \"can not attent the dinner.\""));
-// • Modify your list, replacing the name of the guest who can’t make it with
-// the name of the new person you are inviting.
-var newGuest = "Abdul samad";
-namesOfGuest[namesOfGuest.indexOf(canNotAttend)] = newGuest;
-console.log(namesOfGuest);
-// • Print a second set of invitation messages, one for each person who is still
-// in your list.
-namesOfGuest.map(function (items) {
-    return console.log("Dear ".concat(items, " you are invited to Dinner"));
-});
+// let namesOfGuest: string[] = [
+//     "Asim", "Ahmed", "Ovais","Abdullah"
+// ];
+// console.log(namesOfGuest);
+// let canNotAttend : string = "Asim"
+// console.log(`${canNotAttend} "can not attent the dinner."`)
+// // • Modify your list, replacing the name of the guest who can’t make it with
+// // the name of the new person you are inviting.
+// let newGuest: string = "Abdul samad"
+// namesOfGuest [namesOfGuest.indexOf(canNotAttend)] = newGuest;
+// console.log(namesOfGuest)
+// // • Print a second set of invitation messages, one for each person who is still
+// // in your list.
+// namesOfGuest.map((items)=>
+// console.log(`Dear ${items} you are invited to Dinner`))
 // 16. More Guests: You just found a bigger dinner table, so now more space is
 // available. Think of three more guests to invite to dinner.
 // • Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a
 // bigger dinner table.
+// let namesOfGuest: string[] = [
+//     "Asim", "Ahmed", "Ovais", "Abdullah"
+// ];
+// console.log(namesOfGuest)
 // • Add one new guest to the beginning of your array.
+// Beginning
+var namesOfGuest = [
+    "Asim", "Ahmed", "Ovais", "Abdullah"
+];
+var guestBeg = "Umair";
+namesOfGuest.unshift(guestBeg);
+console.log(namesOfGuest);
 // • Add one new guest to the middle of your array.
+// middle
+var middleGuest = "Arsalan";
+var middleIndex = namesOfGuest.length / 2;
+namesOfGuest.splice(middleIndex, 0, middleGuest);
+console.log(namesOfGuest);
 // • Use append() to add one new guest to the end of your list.
+namesOfGuest.push("Waseem");
+console.log(namesOfGuest);
 // • Print a new set of invitation messages, one for each person in your list.
+namesOfGuest.map(function (items) {
+    return console.log("\"Dear ".concat(items, ", you are invited to the Dinner\""));
+});
 // 17. Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
 // • Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
 // • Remove guests from your list one at a time until only two names remain in your list. Each time you pop a name from your list, print

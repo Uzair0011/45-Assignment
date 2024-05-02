@@ -171,16 +171,36 @@
 
 // • Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a
 // bigger dinner table.
-
+// let namesOfGuest: string[] = [
+//     "Asim", "Ahmed", "Ovais", "Abdullah"
+// ];
+// console.log(namesOfGuest)
 // • Add one new guest to the beginning of your array.
 
-// • Add one new guest to the middle of your array.
-// • Use append() to add one new guest to the end of your list.
-// • Print a new set of invitation messages, one for each person in your list.
+//                 // Beginning
+// let namesOfGuest: string[] = [
+//     "Asim", "Ahmed", "Ovais", "Abdullah"
+// ];
 
+// let guestBeg: string = "Umair"
+// namesOfGuest.unshift(guestBeg)
+// console.log(namesOfGuest)
 
-let 
+// // • Add one new guest to the middle of your array.
+//                 // middle
+// let middleGuest: string = "Arsalan"
+// let middleIndex = namesOfGuest.length/2
+// namesOfGuest.splice(middleIndex,0,middleGuest)
+// console.log(namesOfGuest)
 
+// // • Use append() to add one new guest to the end of your list.
+// namesOfGuest.push("Waseem")
+// console.log(namesOfGuest)
+
+// // • Print a new set of invitation messages, one for each person in your list.
+// namesOfGuest.map((items)=> 
+// console.log(`"Dear ${items}, you are invited to the Dinner"`)
+// )
 
 // 17. Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
 
@@ -193,6 +213,13 @@ let
 
 // • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end
 // of your program.
+
+
+
+
+
+
+
 
 // 18. Seeing the World: Think of at least five places in the world you’d like to visit.
 
