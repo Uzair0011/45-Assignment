@@ -136,33 +136,45 @@
 // ];
 // console.log(namesOfGuest)
 // • Add one new guest to the beginning of your array.
-// Beginning
-var namesOfGuest = [
-    "Asim", "Ahmed", "Ovais", "Abdullah"
-];
-var guestBeg = "Umair";
-namesOfGuest.unshift(guestBeg);
-console.log(namesOfGuest);
-// • Add one new guest to the middle of your array.
-// middle
-var middleGuest = "Arsalan";
-var middleIndex = namesOfGuest.length / 2;
-namesOfGuest.splice(middleIndex, 0, middleGuest);
-console.log(namesOfGuest);
-// • Use append() to add one new guest to the end of your list.
-namesOfGuest.push("Waseem");
-console.log(namesOfGuest);
-// • Print a new set of invitation messages, one for each person in your list.
-namesOfGuest.map(function (items) {
-    return console.log("\"Dear ".concat(items, ", you are invited to the Dinner\""));
-});
+//                 // Beginning
+// let namesOfGuest: string[] = [
+//     "Asim", "Ahmed", "Ovais", "Abdullah"
+// ];
+// let guestBeg: string = "Umair"
+// namesOfGuest.unshift(guestBeg)
+// console.log(namesOfGuest)
+// // • Add one new guest to the middle of your array.
+//                 // middle
+// let middleGuest: string = "Arsalan"
+// let middleIndex = namesOfGuest.length/2
+// namesOfGuest.splice(middleIndex,0,middleGuest)
+// console.log(namesOfGuest)
+// // • Use append() to add one new guest to the end of your list.
+// namesOfGuest.push("Waseem")
+// console.log(namesOfGuest)
+// // • Print a new set of invitation messages, one for each person in your list.
+// namesOfGuest.map((items)=> 
+// console.log(`"Dear ${items}, you are invited to the Dinner"`)
+// )
 // 17. Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
 // • Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
 // • Remove guests from your list one at a time until only two names remain in your list. Each time you pop a name from your list, print
 // a message to that person letting them know you’re sorry you can’t invite them to dinner.
 // • Print a message to each of the two people still on your list, letting them know they’re still invited.
+// let shrinkingGuestList: string[] = ["Asim","Ahmed","Ovais","Abdullah","Abdul Samad",];
+// while (shrinkingGuestList.length > 2) {
+//     const removedGuest = shrinkingGuestList.pop();
+//     console.log(`Sorry, ${removedGuest}, you're no longer invited to dinner. `);    
+// }
 // • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end
 // of your program.
+var guests = ["Asim", "Ahmed"];
+if (guests.length > 0) {
+    guests.pop();
+    guests.pop();
+}
+console.log("Final Guest List ", guests);
+// let guest: string[] = ["Asim","Ahmed ",]
 // 18. Seeing the World: Think of at least five places in the world you’d like to visit.
 // • Store the locations in a array. Make sure the array is not in alphabetical order.
 // • Print your array in its original order.
