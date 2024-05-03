@@ -1,4 +1,13 @@
 // // 45 Assignment
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 // // 1. Install [Node.js](https://nodejs.org/en/), [TypeScript](https://www.typescriptlang.org/download)  and [VS Code](https://code.visualstudio.com/) on your computer.
 // // 2. Personal Message: Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, “Hello Eric,
 // // would you like to learn some Python today?”
@@ -168,17 +177,20 @@
 // }
 // • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end
 // of your program.
-var guests = ["Asim", "Ahmed"];
-if (guests.length > 0) {
-    guests.pop();
-    guests.pop();
-}
-console.log("Final Guest List ", guests);
-// let guest: string[] = ["Asim","Ahmed ",]
+// let guests: string[] =[ "Asim", "Ahmed"];
+// if (guests.length > 0){
+//     guests.pop();
+//     guests.pop();
+// }
+// console.log("Final Guest List ", guests);
 // 18. Seeing the World: Think of at least five places in the world you’d like to visit.
 // • Store the locations in a array. Make sure the array is not in alphabetical order.
+var worldFiveNames = ["Pakistan", "Saudia", "Turkey", "Iran", "Bangladesh",];
 // • Print your array in its original order.
+console.log("Original Order", worldFiveNames);
 // • Print your array in alphabetical order without modifying the actual list.
+// console.log("Alphabetical order",[...worldFiveNames].sort() );
+console.log("Alphabetical order,", __spreadArray([], worldFiveNames, true).sort());
 // • Show that your array is still in its original order by printing it.
 // • Print your array in reverse alphabetical order without changing the order of the original list.
 // • Show that your array is still in its original order by printing it again.

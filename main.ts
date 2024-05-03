@@ -241,11 +241,19 @@
 
 // • Store the locations in a array. Make sure the array is not in alphabetical order.
 
+let worldFiveNames: string[] = ["Pakistan","Saudia","Turkey","Iran","Bangladesh",]
+
+
 // • Print your array in its original order.
+console.log("Original Order", worldFiveNames);
+
 
 // • Print your array in alphabetical order without modifying the actual list.
 
+console.log("Alphabetical order",[...worldFiveNames].sort() );
+
 // • Show that your array is still in its original order by printing it.
+
 
 // • Print your array in reverse alphabetical order without changing the order of the original list.
 
