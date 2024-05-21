@@ -245,36 +245,44 @@ let worldFiveNames: string[] = ["Pakistan","Saudia","Turkey","Iran","Bangladesh"
 
 
 // • Print your array in its original order.
-console.log("Original Order", worldFiveNames);
+console.log("Original Order" +  worldFiveNames);
 
 
 // • Print your array in alphabetical order without modifying the actual list.
-
-console.log("Alphabetical order",[...worldFiveNames].sort() );
+console.log("Alphabetical order" + [...worldFiveNames].sort() );
 
 // • Show that your array is still in its original order by printing it.
-
+console.log("Original Order" + worldFiveNames);
 
 // • Print your array in reverse alphabetical order without changing the order of the original list.
+console.log("Reserse" + [...worldFiveNames].sort().reverse());
 
 // • Show that your array is still in its original order by printing it again.
+console.log("Original Order" + worldFiveNames);
 
 // • Reverse the order of your list. Print the array to show that its
 // order has changed.
+console.log("Reserse" + [...worldFiveNames].sort().reverse()); // top 5 console.log hide when this run commad properly
 
 // • Reverse the order of your list again. Print the list to show it’s back to its original order.
+console.log("Original Order" + worldFiveNames.sort());
 
 // • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
+console.log("Alphabetical Order" + [...worldFiveNames].sort());
 
 // • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
-
-
-
-
+console.log("Reserse" + [...worldFiveNames].sort().reverse());
 
 
 // 19. Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number
 // of people you are inviting to dinner.
+
+
+
+
+
+
+
 
 // 20. Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything
 // else you’d like. Write a program that creates a list containing these items.

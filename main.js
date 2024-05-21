@@ -1,13 +1,4 @@
 // // 45 Assignment
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
 // // 1. Install [Node.js](https://nodejs.org/en/), [TypeScript](https://www.typescriptlang.org/download)  and [VS Code](https://code.visualstudio.com/) on your computer.
 // // 2. Personal Message: Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, “Hello Eric,
 // // would you like to learn some Python today?”
@@ -185,20 +176,27 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 // console.log("Final Guest List ", guests);
 // 18. Seeing the World: Think of at least five places in the world you’d like to visit.
 // • Store the locations in a array. Make sure the array is not in alphabetical order.
-var worldFiveNames = ["Pakistan", "Saudia", "Turkey", "Iran", "Bangladesh",];
+let worldFiveNames = ["Pakistan", "Saudia", "Turkey", "Iran", "Bangladesh",];
 // • Print your array in its original order.
-console.log("Original Order", worldFiveNames);
+console.log("Original Order" + worldFiveNames);
 // • Print your array in alphabetical order without modifying the actual list.
-// console.log("Alphabetical order",[...worldFiveNames].sort() );
-console.log("Alphabetical order,", __spreadArray([], worldFiveNames, true).sort());
+console.log("Alphabetical order" + [...worldFiveNames].sort());
 // • Show that your array is still in its original order by printing it.
+console.log("Original Order" + worldFiveNames);
 // • Print your array in reverse alphabetical order without changing the order of the original list.
+console.log("Reserse" + [...worldFiveNames].sort().reverse());
 // • Show that your array is still in its original order by printing it again.
+console.log("Original Order" + worldFiveNames);
 // • Reverse the order of your list. Print the array to show that its
 // order has changed.
+console.log("Reserse" + [...worldFiveNames].sort().reverse()); // top 5 console.log hide when this run commad properly
 // • Reverse the order of your list again. Print the list to show it’s back to its original order.
+console.log("Original Order" + worldFiveNames.sort());
 // • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
+console.log("Alphabetical Order" + [...worldFiveNames].sort());
 // • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
+console.log("Reserse" + [...worldFiveNames].sort().reverse());
+export {};
 // 19. Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number
 // of people you are inviting to dinner.
 // 20. Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything
