@@ -11,5 +11,3 @@
 // • Test whether an item is in a array
 
 // • Test whether an item is not in a array
-
-https://www.youtube.com/watch?v=WM-kZrhbxFA
