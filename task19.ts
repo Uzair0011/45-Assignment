@@ -3,3 +3,6 @@
 
 
 
+let invitation:string[]=["Uzair","Ahmed"];
+let conunt_invitation:number= invitation.length
+console.log(`${conunt_invitation} people will come to the dinner`)
