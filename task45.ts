@@ -5,3 +5,19 @@
 // color or an optional feature.
 // Print the Object that’s returned to make sure all the information was
 // stored correctly.
+
+type car = {
+    manufactring : string
+    model : string
+    [key: string]:any;
+}
+function CreateCar(manufactring : string, model : string, optional : Record<string,any>):car{
+    return{
+        manufactring,
+        model,
+        ...optional
+    }
+}
+
+const MyCar: car = CreateCar("toyota","corolla",{color:'red',year:'2023'})
+console.log(MyCar)

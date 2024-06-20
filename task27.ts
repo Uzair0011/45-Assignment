@@ -8,3 +8,12 @@
 
 // • Write three versions of this program, making sure each message is printed for the appropriate color alien.
 
+let Alien_colour : string = "yellow"
+
+if (Alien_colour == "green"){
+    console.log("the player just earned 5 points.")
+}else if (Alien_colour == "yellow"){
+    console.log("the player just earned 10 points.")
+}  else {
+    console.log("the player just earned 15 points.")
+}

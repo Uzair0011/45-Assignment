@@ -4,3 +4,16 @@
 // that is being ordered. Call the function three times, using a different number
 // of arguments each time.
 
+function sandwich(...items:string[]):void{
+    console.log("sendwich order:")
+
+    for (let i = 0 ; i < items.length; i++){
+        console.log(`- ${items[i]}`)
+    } 
+}
+
+console.log("enjoy your sendwich Ayesha Umar")
+
+sandwich('beef','cheese')
+sandwich('chicken','mayo sauce')
+sandwich('grilled cheese','tomato','capsium')

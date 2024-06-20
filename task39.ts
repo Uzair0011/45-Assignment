@@ -6,3 +6,16 @@
 // Call your function with at least three city-country pairs, and print the value
 // that’s returned.
 
+
+function city_country(city: string, country: string): string{
+    return `${city}, ${country}`
+}
+
+let C1 = city_country('lahore','pakistan')
+let C2 = city_country('paris','france')
+let C3 = city_country('tokyo','japan')
+
+
+console.log(C1)
+console.log(C2)
+console.log(C3)

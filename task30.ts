@@ -5,3 +5,13 @@
 
 // • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
 
+
+let Users: string [] = ["admin","Eric","Raza","Bilal","Ahmed"]
+
+for(let user of Users){
+    if (user ==="Raza"){
+        console.log("Hello admin, would you like to see a status report")
+    } else {
+        console.log(`Hello user ${user}, thank you for logging in again`)
+    }
+}

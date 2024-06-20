@@ -10,3 +10,18 @@
 // how much you like pizza. The output should consist of three or more lines
 // about the kinds of pizza you like and then an additional sentence, such as
 // I really love pizza!
+
+let favourite_pizza : string [] = ["chicken","pepperoni","beef"]
+
+for (let pizza of favourite_pizza){
+    console.log(pizza)
+}
+
+console.log("\n")
+
+for (let pizza of favourite_pizza){
+    console.log(`I really like ${pizza} pizza!`)
+}
+
+
+console.log("\nI really love pizza!")

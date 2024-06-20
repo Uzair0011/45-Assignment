@@ -11,3 +11,19 @@
 // • If the person is at least 20 years old but less than 65, print a message that the person is an adult.
 
 // • If the person is age 65 or older, print a message that the person is an elder.
+
+let age : number = 10
+
+if(age < 2 ){
+    console.log("you are a baby")
+} else if(age < 4 ){
+    console.log("you are a tolder")
+} else if(age < 13 ){
+    console.log("you are a kid")
+} else if(age < 20 ){
+    console.log("you are a teenager")
+} else if(age < 65 ){
+    console.log("you are a adult")
+} else{
+    console.log("you are older")
+}

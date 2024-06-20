@@ -5,9 +5,9 @@
 // • Tests using "and" and "or" operators
 // • Test whether an item is in a array
 // • Test whether an item is not in a array
-var name1 = "Uzair";
-var name2 = "Uzair Ahmed";
-var name3 = "Mr. Uzair Ahmed";
+let name1 = "Uzair";
+let name2 = "Uzair Ahmed";
+let name3 = "Mr. Uzair Ahmed";
 if (name1 == name3) {
     console.log("both are equal");
 }
@@ -20,8 +20,8 @@ if (name1 != name3) {
 else {
     console.log("both are not equal");
 }
-var num1 = 18;
-var num2 = 20;
+let num1 = 18;
+let num2 = 20;
 if (num1 == 18) {
     console.log("you are eligible");
 }
@@ -86,17 +86,18 @@ if (num1 == 45 || num2 == 39) {
 else {
     console.log("you are not right");
 }
-var country = ["Pakistan", "USA", "Canada", "UAE", "Saudia"];
+let country = ["Pakistan", "USA", "Canada", "UAE", "Saudia"];
 if (country.includes("Pakistan")) {
     console.log("This is in Array List");
 }
 else {
     console.log("This is not in Array List");
 }
-var country1 = ["Pakistan", "USA", "Canada", "UAE", "Saudia"];
+let country1 = ["Pakistan", "USA", "Canada", "UAE", "Saudia"];
 if (country1.includes("Turkey")) {
     console.log("This is in Array List");
 }
 else {
     console.log("This is not in Array List");
 }
+export {};

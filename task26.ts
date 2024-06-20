@@ -7,3 +7,9 @@
 
 // • Write one version of this program that runs the if block and another that runs the else block.
 
+let AlienColor: string = "red"
+if (AlienColor == "green" ){
+   console.log("player just earned 5 points for shooting the alien");
+} else {console.log( "player just earned 10 points");
+   }
+       

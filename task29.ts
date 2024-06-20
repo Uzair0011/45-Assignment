@@ -7,3 +7,21 @@
 // such as You really like bananas!
 
 
+let Favorite_fruits: string [] = ["Apple","orange","Mango"]
+
+if (Favorite_fruits.indexOf("Apple")) {
+    console.log("Apple")
+}
+if (Favorite_fruits.indexOf("Orange")) {
+    console.log("orange")
+}
+if (Favorite_fruits.indexOf("Mango")) {
+    console.log("Mango")
+}
+if (Favorite_fruits.indexOf("cherry")) {
+    console.log("You really like bananas")
+}
+
+if (Favorite_fruits.indexOf("grape")) {
+    console.log("You really like bananas")
+}

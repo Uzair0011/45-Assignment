@@ -9,3 +9,15 @@
 
 // • Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be accepted.
 
+let current_users : string [] = ["Admin","Eric","Ahmed","Raza","Bilal"]
+let new_users : string [] = ["Raza","Bilal","Fatima","Humza","Ali"]
+
+let current_users_lower : string [] = current_users.map(user => user.toLowerCase())
+
+for (let new_user of new_users){
+	if (current_users_lower.indexOf(new_user.toLowerCase())){
+		console.log(`sorry ${new_user},that name is taken`)
+	} else {
+		console.log(`yes ${new_user}, is still in avalible list`)
+	}
+}

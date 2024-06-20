@@ -7,3 +7,17 @@
 // • Add a line at the end of your program stating what these animals have in
 // common. You could print a sentence such as Any of these animals would
 // make a great pet!
+
+
+let animals: string [] = ["cat","dog","line"]
+
+for (let animal of animals){
+    console.log(animal)
+}
+console.log("\n")
+
+for (let animal of animals){
+    console.log(`A ${animal} has a long tall`)
+}
+
+console.log("\n all of these are great pets! but 1 love cats more")
